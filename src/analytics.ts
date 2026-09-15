@@ -1,0 +1,1 @@
+export const track = (event: string, data: Record<string, string | number> = {}) => { if (import.meta.env.DEV) console.info('[analytics]', event, data); window.dispatchEvent(new CustomEvent('assessment-analytics', { detail: { event, ...data } })) }

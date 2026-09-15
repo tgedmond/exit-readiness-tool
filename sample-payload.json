@@ -1,0 +1,14 @@
+{
+  "submissionId": "demo-submission-id",
+  "eventName": "pantheon_exit_readiness_assessment",
+  "timestamp": "2026-09-09T00:00:00.000Z",
+  "source": "qr",
+  "host": "pantheon",
+  "campaign": "exit-readiness",
+  "contact": { "firstName": "Demo", "lastName": "Respondent", "workEmail": "demo@example.com", "firm": "Example Firm", "role": "Operating partner", "phone": "", "companyAlias": "DemoCo", "emailResult": true, "westMonroeFollowUp": true, "serviceTitanFollowUp": false, "piperSandlerFollowUp": false },
+  "context": { "vertical": "Commercial services", "businessModel": "Mixed model", "revenueBand": "$100M–$500M", "locations": "26–100", "acquisitionPace": "Occasional", "holdStage": "Mid-hold", "exitHorizon": "12–24 months", "platform": "ServiceTitan", "instanceModel": "Governed multi-instance / multi-tenant" },
+  "answers": { "q1": 3, "q2": 3, "q3": 4, "q4": 4, "q5": 2, "q6": 2, "q7": 3, "q8": 3 },
+  "scores": { "technology": 60, "data": 80, "ai": 40, "buyerEvidence": 60, "overall": 60 },
+  "result": { "archetype": "Data-Enabled Operator", "qualifiers": ["Untapped Intelligence Upside"], "opportunitySignals": ["AI roadmap + operational intelligence"] },
+  "internal": { "opportunitySignals": ["AI roadmap + operational intelligence"], "urgency": "Prioritize operating, data, and technology gaps that require sustained remediation." }
+}
