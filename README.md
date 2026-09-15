@@ -29,3 +29,4 @@ pnpm build
 Progress is saved to local storage, so a refresh or brief connectivity interruption does not discard responses. Submission IDs are stable in the saved state to support idempotency in a production adapter. Generate a real QR SVG with `pnpm qr [url]`; the target URL is also written to `outputs/qr-target.txt`.
 
 Sponsor commentary, named contacts, consent language, privacy links, final thresholds, and production routing remain explicit placeholders pending approval. The tool is directional and must not be presented as a valuation, audit, diligence opinion, or validated industry benchmark.
+Connected to Vercel
