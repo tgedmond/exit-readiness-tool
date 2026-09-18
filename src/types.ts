@@ -1,15 +1,13 @@
 export type Screen = 'landing' | 'buyer-context' | 'context' | 'assessment' | 'immediate-result' | 'lead' | 'detail' | 'conversion'
-export type DimensionKey = 'technology' | 'data' | 'ai' | 'buyerEvidence'
+export type DimensionKey = 'technology' | 'data' | 'ai'
 export type Answer = 1 | 2 | 3 | 4 | 5
 
 export type ContextData = {
-  role: string; firm: string; vertical: string; businessModel: string; revenueBand: string; locations: string
-  acquisitionPace: string; holdStage: string; exitHorizon: string; platform: string; instanceModel: string
+  vertical: string; exitHorizon: string; serviceTitanUser: string
 }
 
 export type ContactData = {
   firstName: string; lastName: string; workEmail: string; firm: string; role: string; phone: string; companyAlias: string
-  emailResult: boolean; westMonroeFollowUp: boolean; serviceTitanFollowUp: boolean; piperSandlerFollowUp: boolean
 }
 
 export type AssessmentState = {
