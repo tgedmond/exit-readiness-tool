@@ -22,5 +22,14 @@ export type AssessmentResult = {
   buyerQuestions: string[]; valuePath: string; recommendedActions: string[]; opportunitySignals: string[]; urgency: string
 }
 
-export type Question = { id: string; dimension: DimensionKey; prompt: string; buyerLens: string; example: string; scaleMin: string; scaleMax: string }
+export type Question = {
+  id: string
+  dimension: DimensionKey
+  prompt: string
+  buyerLens: string
+  example: string
+  scaleMin: string
+  scaleMax: string
+  maturityDescriptions: Record<Answer, string>
+}
 export type Archetype = { id: string; name: string; strapline: string; description: string; valuePath: string; actions: string[]; signal: string }
