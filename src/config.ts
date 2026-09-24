@@ -24,13 +24,13 @@ export const maturityScale = [
 
 export const dimensions: Record<DimensionKey, { label: string; shortLabel: string; description: string }> = {
   technology: { label: 'Scalable platform', shortLabel: 'Platform', description: 'The architecture, workflows, integration model, and governance can absorb growth without compounding complexity.' },
-  data: { label: 'Trusted data', shortLabel: 'Data', description: 'Priority operating and financial measures are defined, traceable, and reconcilable.' },
+  data: { label: 'Trusted data', shortLabel: 'Data', description: 'The portfolio company’s priority operating and financial measures are defined, traceable, and reconcilable.' },
   ai: { label: 'Operationalized AI', shortLabel: 'AI', description: 'AI and advanced analytics are embedded in workflows and tied to measurable outcomes.' },
 }
 
 export const questions: Question[] = [
   {
-    id: 'q1', dimension: 'technology', prompt: 'How would you rate your core technology’s scalability for new locations and acquisitions?', buyerLens: 'Architecture, technical debt, governance, acquisition onboarding, and system costs.', example: 'Choose the description that most closely matches how your platform works today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
+    id: 'q1', dimension: 'technology', prompt: 'How would you rate your portfolio company’s core technology scalability for new locations and acquisitions?', buyerLens: 'Architecture, technical debt, governance, acquisition onboarding, and system costs.', example: 'Choose the description that most closely matches how the portfolio company’s platform works today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
     maturityDescriptions: {
       1: 'Core technology varies by location, and new acquisitions require significant manual work.',
       2: 'Some scalable patterns exist, but onboarding still depends on workarounds.',
@@ -40,7 +40,7 @@ export const questions: Question[] = [
     },
   },
   {
-    id: 'q2', dimension: 'technology', prompt: 'How consistently are systems, workflows, and reporting managed across locations?', buyerLens: 'Whether growth is creating one operating platform or more variation.', example: 'Choose the description that most closely matches how consistently locations operate today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
+    id: 'q2', dimension: 'technology', prompt: 'How consistently are systems, workflows, and reporting standardized across the portfolio company’s locations?', buyerLens: 'Whether growth is creating one operating platform or more variation.', example: 'Choose the description that most closely matches how consistently the portfolio company’s locations operate today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
     maturityDescriptions: {
       1: 'Systems, workflows, and reporting vary widely by location with limited standards.',
       2: 'Some common standards exist, but teams apply them inconsistently.',
@@ -50,27 +50,17 @@ export const questions: Question[] = [
     },
   },
   {
-    id: 'q3', dimension: 'data', prompt: 'How reliably can you produce consistent KPIs and reconcile them to source systems and financial results?', buyerLens: 'Source-to-report lineage, manual reconciliation, KPI consistency, and cross-location comparability.', example: 'Choose the description that most closely matches your reporting and reconciliation process today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
+    id: 'q3', dimension: 'data', prompt: 'How mature are the portfolio company’s performance data and reports for understanding KPIs and the drivers of revenue, margin, productivity, and cash flow?', buyerLens: 'KPI definitions, source-to-report lineage, reconciliation, performance drivers, and cross-location comparability.', example: 'Choose the description that most closely matches how the portfolio company uses data to understand and act on performance today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
     maturityDescriptions: {
-      1: 'KPI definitions and reconciliations are mostly manual, inconsistent, or undocumented.',
-      2: 'Some shared KPIs and checks exist, but gaps and rework remain.',
-      3: 'Core KPIs are defined, traceable to source systems, and generally reconciled.',
-      4: 'Data quality, lineage, and reconciliation performance are measured and governed.',
-      5: 'Reporting is automated, trusted, and continuously improved with timely controls.',
+      1: 'KPIs and performance drivers are inconsistent or mostly manual, so leadership sees outcomes but cannot reliably explain them.',
+      2: 'Some shared KPIs and driver views exist, but reporting is delayed, inconsistent, or requires significant rework.',
+      3: 'Core KPIs and performance drivers are defined, traceable to source systems, and shown in standard reports.',
+      4: 'Data quality, reconciliations, driver metrics, and reporting cadence are consistently measured and governed.',
+      5: 'The portfolio company uses automated, timely, and predictive reporting to improve performance continuously.',
     },
   },
   {
-    id: 'q4', dimension: 'data', prompt: 'How clearly can leaders see the drivers of revenue, margin, productivity, and working capital?', buyerLens: 'Whether management can diagnose performance drivers, not just report outcomes.', example: 'Choose the description that most closely matches the decisions your operating team can make from data today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
-    maturityDescriptions: {
-      1: 'Leaders mainly see outcomes; the drivers of performance are hard to isolate.',
-      2: 'Some driver views exist, but they are delayed, manual, or limited to certain areas.',
-      3: 'Standard dashboards and analyses show the main performance drivers across the business.',
-      4: 'Driver metrics are monitored consistently, linked to action, and reviewed through management routines.',
-      5: 'Decision-makers use timely, predictive insights and automated alerts to improve performance continuously.',
-    },
-  },
-  {
-    id: 'q5', dimension: 'ai', prompt: 'How would you rate your AI capability—from daily use to measurable business impact?', buyerLens: 'Whether AI is trusted, adopted in workflows, governed, and tied to measurable outcomes.', example: 'Choose the description that most closely matches how AI is used and measured in your business today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
+    id: 'q5', dimension: 'ai', prompt: 'How would you rate your portfolio company’s AI capability—from daily use to measurable business impact?', buyerLens: 'Whether AI is trusted, adopted in workflows, governed, and tied to measurable outcomes.', example: 'Choose the description that most closely matches how AI is used and measured in the portfolio company today.', scaleMin: 'Earlier maturity', scaleMax: 'More mature',
     maturityDescriptions: {
       1: 'AI use is limited to ad hoc experiments with no consistent ownership, governance, or measured impact.',
       2: 'Individual teams use early tools or pilots, but adoption and outcomes are inconsistent.',

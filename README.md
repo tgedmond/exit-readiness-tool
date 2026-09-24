@@ -1,6 +1,6 @@
 # Technology Enabled Exit Readiness Archetype
 
-Mobile-first React + TypeScript prototype for the Pantheon happy hour. The experience collects three business details, five readiness ratings, and contact information before revealing an immediate readiness score and detailed profile.
+Mobile-first React + TypeScript prototype for the Pantheon happy hour. The experience collects three portfolio company details, four maturity ratings, and contact information before revealing an immediate readiness signal and detailed profile.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ pnpm build
 
 ## Configuration
 
-- Edit `src/config.ts` for the five questions, 1–5 maturity labels, dimensions, archetypes, qualifiers, sponsor copy, contacts, privacy URL, and brand variables.
+- Edit `src/config.ts` for the four questions, question-specific 1–5 maturity descriptions, dimensions, archetypes, qualifiers, sponsor copy, contacts, privacy URL, and brand variables.
 - `src/scoring.ts` contains the prototype classification logic from the brief. Thresholds are deliberately easy to change.
 - Set `LEAD_WEBHOOK_URL` only in the server deployment environment. The browser posts to the server-side `/api/lead` route; CRM or webhook secrets never enter the client bundle.
 - In local development, submissions use a client-side mock sink. In a deployed environment with no webhook configured, the server route returns a mock success so the flow remains testable.
